@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="TumblrSharp2.ApiMethods.ApiMethod" Collapsed="true">
+    <Position X="9" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAEgAAAAIAAAAAAAAAAAAAASIAAAACAAAA=</HashCode>
+      <FileName>ApiMethods\ApiMethod.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="OAuthToken" />
+      <Property Name="Parameters" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TumblrSharp2.ApiMethods.BlogMethod" Collapsed="true">
+    <Position X="7.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiMethods\BlogMethod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.ApiMethods.UserMethod" Collapsed="true">
+    <Position X="10" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiMethods\UserMethod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.Responses.BlogInfo" Collapsed="true">
+    <Position X="2" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAgAEAAAAIAAAUEAAAAAAAECAAAAQAAAAA=</HashCode>
+      <FileName>Responses\BlogInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.Responses.UserInfo" Collapsed="true">
+    <Position X="9.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAQAAIAAAQAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Responses\UserInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DefaultPostFormat" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Blogs" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TumblrSharp2.JsonConverters.BoolConverter" Collapsed="true">
+    <Position X="35" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>JsonConverters\BoolConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.JsonConverters.EnumConverter" Collapsed="true">
+    <Position X="38.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>JsonConverters\EnumConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.JsonConverters.PostArrayConverter" Collapsed="true">
+    <Position X="33.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>JsonConverters\PostArrayConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.JsonConverters.TimestampConverter" Collapsed="true">
+    <Position X="36.75" Y="7" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>JsonConverters\TimestampConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.OAuth.OAuthClient" Collapsed="true">
+    <Position X="15" Y="13.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAgAQAQAECAAAABAIIAAAAAAAABABAAgQ=</HashCode>
+      <FileName>OAuth\OAuthClient.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="hashProvider" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TumblrSharp2.OAuth.OAuthException" Collapsed="true">
+    <Position X="37.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OAuth\OAuthException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.OAuth.OAuthMessageHandler" Collapsed="true">
+    <Position X="15" Y="14.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAEAAAAAAACAAAABAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OAuth\OAuthMessageHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.OAuth.Token" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQEgAgAAAAAAAAAAIAAAAAAIAAAAAA=</HashCode>
+      <FileName>OAuth\Token.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TumblrSharp2.Posts.AnswerPost" Collapsed="true">
+    <Position X="23" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAQAAAAAAEAAAAAgAAAAA=</HashCode>
+      <FileName>Responses\Posts\AnswerPost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.Posts.AudioPost" Collapsed="true">
+    <Position X="7.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABBAAAAAAAAAAAAAAgAoAAAABACAAASQAAAAA=</HashCode>
+      <FileName>Responses\Posts\AudioPost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.Posts.BasePost" Collapsed="true">
+    <Position X="15" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIgiAQAAEBACAAAACAACAAAAAAhEAFACCQIABAAAwAA=</HashCode>
+      <FileName>Responses\Posts\BasePost.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+      <Property Name="Format" />
+      <Property Name="State" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TumblrSharp2.Posts.ChatPost" Collapsed="true">
+    <Position X="14" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAEAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Responses\Posts\ChatPost.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Dialogue" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TumblrSharp2.Posts.ChatFragment" Collapsed="true">
+    <Position X="14" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAUAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Responses\Posts\ChatPost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.Posts.LinkPost" Collapsed="true">
+    <Position X="18.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAEAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Responses\Posts\LinkPost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.Posts.PhotoPost" Collapsed="true">
+    <Position X="20.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQCAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Responses\Posts\PhotoPost.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PhotoSet" />
+      <Property Name="Photo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TumblrSharp2.Posts.Photo" Collapsed="true">
+    <Position X="20.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAACCAAAAAAAAA=</HashCode>
+      <FileName>Responses\Posts\PhotoPost.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="AlternateSizes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TumblrSharp2.Posts.PhotoInfo" Collapsed="true">
+    <Position X="23.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Responses\Posts\PhotoPost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.Posts.QuotePost" Collapsed="true">
+    <Position X="9.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Responses\Posts\QuotePost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.Posts.TextPost" Collapsed="true">
+    <Position X="11.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Responses\Posts\TextPost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.Posts.VideoPost" Collapsed="true">
+    <Position X="16.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAgACAAAACAAAgAAAAAAAAAAACAAAAQAQAAA=</HashCode>
+      <FileName>Responses\Posts\VideoPost.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Player" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TumblrSharp2.Posts.Player" Collapsed="true">
+    <Position X="16.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Responses\Posts\VideoPost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.Responses.Intermediate.BlogInfoResponse">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Responses\Intermediate\BlogInfoResponse.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Blog" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TumblrSharp2.Responses.Intermediate.UserInfoResponse">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Responses\Intermediate\UserInfoResponse.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TumblrSharp2.BinaryFile" Collapsed="true">
+    <Position X="27.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAQAAAAEAAAAAAAAABAAAEAQAABAAAA=</HashCode>
+      <FileName>Requests\BinaryFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.ApiMethods.Parameters.BinaryMethodParameter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="16" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAECAQAAAAEAKAAAEAAAABAAAA=</HashCode>
+      <FileName>ApiMethods\Parameters\BinaryMethodParameter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TumblrSharp2.Responses.PostCollection" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Responses\PostCollection.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Blog" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Result" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TumblrSharp2.DateTimeHelper" Collapsed="true">
+    <Position X="35.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\DateTimeHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.Responses.Followers" Collapsed="true">
+    <Position X="4.5" Y="2.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAUAgAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Responses\Followers.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Result" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TumblrSharp2.Responses.Following" Collapsed="true">
+    <Position X="6.75" Y="2.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Responses\Following.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Result" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TumblrSharp2.HmacSha1HashProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.25" Y="14.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>OAuth\HmacSha1HashProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TumblrSharp2.Responses.Likes" Collapsed="true">
+    <Position X="15" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Responses\Likes.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Result" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TumblrSharp2.ApiMethods.Parameters.MethodParameterSet">
+    <Position X="2.5" Y="14.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="TumblrSharp2.ApiMethods.Parameters.MethodParameterSet.MethodParameterComparer" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApiMethods\Parameters\MethodParameterSet.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAIACAAAAABAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>ApiMethods\Parameters\MethodParameterSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.OAuth.OAuthClientFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13" Y="14.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>OAuth\OAuthClientFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.Pagination" Collapsed="true">
+    <Position X="17.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Pagination.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.Responses.Intermediate.PostCollectionResponse">
+    <Position X="12.25" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Responses\Intermediate\PostCollectionResponse.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Posts" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TumblrSharp2.PostCreationInfo" Collapsed="true">
+    <Position X="25.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Responses\PostCreationInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.PostData" Collapsed="true">
+    <Position X="25.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAACAAAAAAAAAAAAAAQAAiAQEQBIAAAhATAAAA=</HashCode>
+      <FileName>Requests\PostData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="State" />
+      <Property Name="Format" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TumblrSharp2.ApiMethods.Parameters.StringMethodParameter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="16" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAACAQAAAAEAKAAAAAgAAAAAAA=</HashCode>
+      <FileName>ApiMethods\Parameters\StringMethodParameter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TumblrSharp2.TumblrClient" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25.25" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACACQKACGBAAAGiAABAMAAAQAACgAAAAAASEACCEAA=</HashCode>
+      <FileName>Clients\TumblrClient.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="rawClient" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TumblrSharp2.TumblrClientFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>TumblrClientFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.TumblrException" Collapsed="true">
+    <Position X="35.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>TumblrException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.TumblrRawClient" BaseTypeListCollapsed="true">
+    <Position X="27.75" Y="16.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="TumblrSharp2.TumblrRawClient.TumblrRawResponse&lt;TResponse&gt;" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Clients\TumblrRawClient.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TumblrSharp2.TumblrRawClient.TumblrResponseStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Clients\TumblrRawClient.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAIAAAQAACAEAACAAAgAAAAIAAAAAAAAAAIABABCAAA=</HashCode>
+      <FileName>Clients\TumblrRawClient.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TumblrSharp2.UrlEncoder" Collapsed="true">
+    <Position X="35.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAIAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Utils\UrlEncoder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Newtonsoft.Json.JsonConverter" Collapsed="true">
+    <Position X="35.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Exception" Collapsed="true">
+    <Position X="35.75" Y="8" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TumblrSharp2.Info.FollowingInfo" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAEAAAAAAAAUAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Info\FollowingInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.Info.FollowerInfo" Collapsed="true">
+    <Position X="4.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Info\FollowerInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TumblrSharp2.Info.UserBlogInfo" Collapsed="true">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAABQAAAAAgAMAACAAAAAQgAAEAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Info\UserBlogInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="TumblrSharp2.IHashProvider" Collapsed="true">
+    <Position X="18.25" Y="13.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>OAuth\IHashProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TumblrSharp2.ApiMethods.Parameters.IMethodParameter" Collapsed="true">
+    <Position X="6.25" Y="15" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiMethods\Parameters\IMethodParameter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TumblrSharp2.ITumblrClient" Collapsed="true">
+    <Position X="25.25" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACACAKACEBAAAEiAABAMAAAQAACAAAAAAASEACCEAA=</HashCode>
+      <FileName>Clients\ITumblrClient.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TumblrSharp2.ITumblrRawClient" Collapsed="true">
+    <Position X="27.75" Y="15.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAABCAAA=</HashCode>
+      <FileName>Clients\ITumblrRawClient.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="TumblrSharp2.BlogType" Collapsed="true">
+    <Position X="3.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>BlogType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TumblrSharp2.PostCreationState" Collapsed="true">
+    <Position X="25.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAACAAAAAAAUAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PostCreationState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TumblrSharp2.PostFilter" Collapsed="true">
+    <Position X="16" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAABAAAAAAACAAAAAA=</HashCode>
+      <FileName>Requests\PostFilter.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TumblrSharp2.PostFormat" Collapsed="true">
+    <Position X="11.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\PostFormat.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TumblrSharp2.PostType" Collapsed="true">
+    <Position X="16.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAEAAAAAgAAAAAgAAIAASgAAAAg=</HashCode>
+      <FileName>PostType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

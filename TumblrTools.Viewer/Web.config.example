@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  For more information on how to configure your ASP.NET application, please visit
+  http://go.microsoft.com/fwlink/?LinkId=301880
+  -->
+<configuration>
+  <configSections>
+    <section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net" />
+  </configSections>
+  <appSettings>
+    <add key="ConnectionString" value="mongodb://localhost" />
+    <add key="TableName" value="tumblr_downloader" />
+    <add key="PhotosDirectory" value="D:\tumblrphotos" />
+    <add key="ConsumerKey" value="XyZqCuQUniTnKQLqaloKgBH5U0J0JkJV7cx0BJsXXYVWAjlOA6" />
+    <add key="ConsumerSecret" value="S0KbAbg7HGOYX6JDKEC4NSemsZVLxB6WpOPOdDGob4gUgXOmdA" />
+    <add key="webpages:Version" value="3.0.0.0" />
+    <add key="webpages:Enabled" value="false" />
+    <add key="ClientValidationEnabled" value="true" />
+    <add key="UnobtrusiveJavaScriptEnabled" value="true" />
+  </appSettings>
+  <system.web>
+    <compilation debug="true" targetFramework="4.5" />
+    <httpRuntime targetFramework="4.5" />
+  </system.web>
+  
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" culture="neutral" publicKeyToken="30ad4fe6b2a6aeed" />
+        <bindingRedirect oldVersion="0.0.0.0-6.0.0.0" newVersion="6.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Optimization" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="1.0.0.0-1.1.0.0" newVersion="1.1.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="WebGrease" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="0.0.0.0-1.5.2.14234" newVersion="1.5.2.14234" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Helpers" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="1.0.0.0-3.0.0.0" newVersion="3.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.WebPages" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="1.0.0.0-3.0.0.0" newVersion="3.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Mvc" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="1.0.0.0-5.2.0.0" newVersion="5.2.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="log4net" publicKeyToken="669e0ddf0bb1aa2a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-1.2.13.0" newVersion="1.2.13.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="RabbitMQ.Client" publicKeyToken="89e7d7c5feba84ce" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.3.5.0" newVersion="3.3.5.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+
+  <log4net>
+    <appender name="AmqpAppender" type="log4net.RabbitMQ.RabbitMQAppender, log4net.RabbitMQ">
+      <userName value="app" />
+      <password value="1234" />
+      <exchangeProperties>
+        <name value="AppLogs" />
+        <exchangeType value="topic" />
+        <durable value="true" />
+      </exchangeProperties>
+
+      <messageProperties>
+        <appId value="My Web Application" />
+        <topic type="log4net.Layout.PatternLayout">
+          <conversionPattern value="tumblrdownloader.commandline.%level" />
+        </topic>
+        <contentType type="log4net.Layout.PatternLayout">
+          <conversionPattern value="text/json" />
+        </contentType>
+        <persistent value="false" />
+        <priority type="log4net.Layout.PatternLayout">
+          <conversionPattern value="0" />
+        </priority>
+      </messageProperties>
+
+      <layout type="log4net.Layout.SerializedLayout, log4net.Ext.Json">
+      </layout>
+    </appender>
+
+    <logger name="TumblrViewer">
+      <level value="ALL" />
+      <appender-ref ref="AmqpAppender" />
+    </logger>
+  </log4net>
+</configuration>

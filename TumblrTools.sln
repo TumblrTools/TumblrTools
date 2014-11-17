@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TumblrTools.CommandLine", "TumblrTools.CommandLine\TumblrTools.CommandLine.csproj", "{842941A6-0AC3-459F-832D-84549CD6E14C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TumblrSharp2", "TumblrSharp2\TumblrSharp2.csproj", "{E7E12A8F-3294-4600-A41C-32449110FA6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TumblrTools.Domain", "TumblrTools.Domain\TumblrTools.Domain.csproj", "{005CB4AC-D62C-4F2D-9079-0B92D829FF22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TumblrTools.Infrastructure", "TumblrTools.Infrastructure\TumblrTools.Infrastructure.csproj", "{1110568D-38FB-4F87-895C-7458BB56129A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TumblrTools.Viewer", "TumblrTools.Viewer\TumblrTools.Viewer.csproj", "{9DFDC313-68FF-42E0-AADB-6FE7FD1D5097}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TumblrTools.Application", "TumblrTools.Application\TumblrTools.Application.csproj", "{7E1E0130-A73B-49DC-8807-7ECEE553F100}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TumblrTools.Generic", "TumblrTools.Generic\TumblrTools.Generic.csproj", "{6C647888-9D20-4723-A95E-D26FBABB23DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{77D5260A-7F54-47DB-AAD6-5B8A80673822}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{842941A6-0AC3-459F-832D-84549CD6E14C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{842941A6-0AC3-459F-832D-84549CD6E14C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{842941A6-0AC3-459F-832D-84549CD6E14C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{842941A6-0AC3-459F-832D-84549CD6E14C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7E12A8F-3294-4600-A41C-32449110FA6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7E12A8F-3294-4600-A41C-32449110FA6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7E12A8F-3294-4600-A41C-32449110FA6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7E12A8F-3294-4600-A41C-32449110FA6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{005CB4AC-D62C-4F2D-9079-0B92D829FF22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{005CB4AC-D62C-4F2D-9079-0B92D829FF22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{005CB4AC-D62C-4F2D-9079-0B92D829FF22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{005CB4AC-D62C-4F2D-9079-0B92D829FF22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1110568D-38FB-4F87-895C-7458BB56129A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1110568D-38FB-4F87-895C-7458BB56129A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1110568D-38FB-4F87-895C-7458BB56129A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1110568D-38FB-4F87-895C-7458BB56129A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DFDC313-68FF-42E0-AADB-6FE7FD1D5097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DFDC313-68FF-42E0-AADB-6FE7FD1D5097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DFDC313-68FF-42E0-AADB-6FE7FD1D5097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DFDC313-68FF-42E0-AADB-6FE7FD1D5097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E1E0130-A73B-49DC-8807-7ECEE553F100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E1E0130-A73B-49DC-8807-7ECEE553F100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E1E0130-A73B-49DC-8807-7ECEE553F100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E1E0130-A73B-49DC-8807-7ECEE553F100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C647888-9D20-4723-A95E-D26FBABB23DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C647888-9D20-4723-A95E-D26FBABB23DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C647888-9D20-4723-A95E-D26FBABB23DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C647888-9D20-4723-A95E-D26FBABB23DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{842941A6-0AC3-459F-832D-84549CD6E14C} = {77D5260A-7F54-47DB-AAD6-5B8A80673822}
+		{9DFDC313-68FF-42E0-AADB-6FE7FD1D5097} = {77D5260A-7F54-47DB-AAD6-5B8A80673822}
+	EndGlobalSection
+EndGlobal

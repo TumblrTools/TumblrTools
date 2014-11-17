@@ -1,0 +1,46 @@
+﻿@model IEnumerable<TumblrTools.Domain.DownloadEntry>
+
+<h2>Blogs</h2>
+
+@using (Html.BeginForm("Create", "Download", FormMethod.Post)) {
+    <input name="blogId" />
+    <input name="tags" />
+    <button type="submit">Create</button>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            BlogId
+        </th>
+        <th>
+            Tags
+        </th>
+        <th>
+            Last update
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <a href="http://@(item.BlogId).tumblr.com">@item.BlogId</a>
+        </td>
+        <td>
+            @item.TagList()
+        </td>
+        <td>
+            @item.LastUpdate
+        </td>
+        <td>
+            @using (Html.BeginForm("Delete", "Download", FormMethod.Post))
+            {
+                @Html.Hidden("blogId", item.BlogId)
+                <button type="submit">Delete</button>
+            }
+        </td>
+    </tr>
+}
+
+</table>

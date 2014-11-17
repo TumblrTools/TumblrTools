@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section scripts
+{
+<script src="~/Scripts/lightbox-2.6.min.js"></script>
+    <script src="~/Scripts/knockout.js"></script>
+    <script src="~/Scripts/app.js"></script>
+    <script>
+        $(function () {
+            var model = new AppViewModel();
+            ko.applyBindings(model);
+
+            model.getPage();
+        });
+    </script>
+}
+
+@* ReSharper disable once UnknownCssClass -> 'gallery' class is used by lightbox *@
+<div class="gallery row" data-bind="foreach: { data: photos, as: 'photo' }">
+    <div data-bind="if: $index() == 0 || !photo.post.publish_date.clone().startOf('day').isSame($parent.photos()[($index()-1)].post.publish_date.clone().startOf('day'))" class="item" style="float:left; height: 250px; overflow: hidden;">
+        <div style="font-size: smaller">
+
+        </div>
+        <div style="width: 250px; height: 250px; text-align: center; line-height: 5em; padding: 20px;">
+            <span style="font-size: 5em" data-bind="text: photo.post.publish_date.format('ddd')"></span><br />
+            <span style="font-size: 8em" data-bind="text: photo.post.publish_date.format('D')"></span>
+        </div>
+    </div>
+    <div data-bind="if: !photo.post.reblogged_from_id" class="item" style="float:left; height: 250px; overflow: hidden;">
+        <div style="font-size: smaller">
+            <span data-bind="text: photo.post.blog_name"></span> |
+            <a data-bind="attr: { href: photo.post.post_url, title: photo.post.tags }, text: photo.post.publish_date.format('YYYY-MM-DD HH:mm')"></a>
+        </div>
+        <div>
+            <a data-bind="attr: { href: photo.full_size.url, 'data-title': photo.post.blog_name, title: photo.post.blog_name }" data-lightbox="image-set">
+                <img data-bind="attr: { src: photo.thumb_size_url, alt: photo.post.blog_name }" style="width: 250px" />
+            </a>
+        </div>
+    </div>
+    <div data-bind="if: photo.post.reblogged_from_id" class="item" style="float:left; height: 250px; overflow: hidden;">
+        REBLOOOG
+    </div>
+</div>
+
+<div class="clearfix"></div>
+<div class="row">
+    <button data-bind="click: getPage">More...</button>
+</div>
