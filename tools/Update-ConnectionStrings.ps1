@@ -7,7 +7,7 @@
 
 $scriptPath = Split-Path -parent $MyInvocation.MyCommand.Definition
 
-$configPath = Join-Path $scriptPath $configPath
+$configPath = Join-Path $scriptPath $configPath | Resolve-Path
 
 Write-Host "Updating connectionStrings section..." -foregroundcolor "Cyan"
 
@@ -36,7 +36,7 @@ if ($addNode -ne $null)
     Write-Host -NoNewline "$name entry found in config file... " -ForegroundColor Cyan
     # Delete node
     $temp = $appSettingsNode.RemoveChild($addNode)
-    Write-Host -NoNewline "Node removed" -ForegroundColor Green
+    Write-Host "Node removed" -ForegroundColor Green
 }
  
 Write-Host -NoNewline "Creating entry... " -ForegroundColor Cyan
