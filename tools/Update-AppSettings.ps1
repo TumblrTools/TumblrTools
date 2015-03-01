@@ -6,7 +6,7 @@
 
 $scriptPath = Split-Path -parent $MyInvocation.MyCommand.Definition
 
-$configPath = Join-Path $scriptPath $configPath
+$configPath = Join-Path $scriptPath $configPath | Resolve-Path
 
 Write-Host "Updating AppSettings section..." -foregroundcolor "Cyan"
 
