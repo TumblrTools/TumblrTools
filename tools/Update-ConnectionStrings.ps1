@@ -5,10 +5,6 @@
     [String] $providerName
 )
 
-$scriptPath = Split-Path -parent $MyInvocation.MyCommand.Definition
-
-$configPath = Join-Path $scriptPath $configPath | Resolve-Path
-
 Write-Host "Updating connectionStrings section..." -foregroundcolor "Cyan"
 
 Write-Host -NoNewline "Loading config file in $configPath... " -ForegroundColor Cyan
