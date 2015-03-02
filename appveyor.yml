@@ -18,6 +18,7 @@ install:
 - cinst mongodb
 before_build:
 - ps: tools\Setup-ConfigFiles.ps1
+- nuget restore
 build:
   verbosity: minimal
 test: off
