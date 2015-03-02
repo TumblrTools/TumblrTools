@@ -4,6 +4,11 @@
     [String] $value
 )
 
+$scriptPath = Split-Path -parent $MyInvocation.MyCommand.Definition
+pushd $scriptPath
+
+$configPath = Join-Path $scriptPath $configPath | Resolve-Path
+
 Write-Host "Updating AppSettings section..." -foregroundcolor "Cyan"
 
 Write-Host -NoNewline "Loading config file in $configPath... " -ForegroundColor Cyan
@@ -47,3 +52,5 @@ $xml.Save($configPath)
 Write-Host "Done" -ForegroundColor Green
      
 Write-Host "appSettings section updated successfully." -foregroundcolor "Green"
+
+popd

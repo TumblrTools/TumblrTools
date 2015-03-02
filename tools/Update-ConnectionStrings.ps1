@@ -5,6 +5,9 @@
     [String] $providerName
 )
 
+$scriptPath = Split-Path -parent $MyInvocation.MyCommand.Definition
+pushd $scriptPath
+
 Write-Host "Updating connectionStrings section..." -foregroundcolor "Cyan"
 
 Write-Host -NoNewline "Loading config file in $configPath... " -ForegroundColor Cyan
@@ -49,3 +52,5 @@ $xml.Save($configPath)
 Write-Host "Done" -ForegroundColor Green
      
 Write-Host "connectionStrings section updated successfully." -foregroundcolor "Green"
+
+popd
