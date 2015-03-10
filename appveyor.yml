@@ -16,8 +16,8 @@ environment:
     secure: H7qv/O4zuHkV9jHfKUXG0Gcn8+/9o1R2q5yRLKQu223bo8IuNoAStjg5FfLgRD3i/RqSa6K9KzM6qcML/I0TUg==
 install:
   - cinst mongodb
-before_build:
   - nuget restore
+before_build:
   - ps: tools\Setup-ConfigFiles.ps1
 build:
   verbosity: minimal
